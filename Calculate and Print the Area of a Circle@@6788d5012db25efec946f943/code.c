@@ -1,9 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    float r,pie;
-    pie=3.14;
-    scanf("%f",&r&pie);
-    printf("the area of circle  ",r,pie);
+    float radius,area;
+    const float pie=3.14;
+    scanf("%f",&radius);
+    area=pie*radius*radius;
+    printf("the area of circle :%.2f\n ",area);
     return 0;
 }
