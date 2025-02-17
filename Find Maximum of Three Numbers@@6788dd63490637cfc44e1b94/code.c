@@ -11,7 +11,7 @@ int main()
     {
         printf("%d",b);
     }
-    else (c>(b || a))
+    else 
     {
         printf("%d",c);
     }
