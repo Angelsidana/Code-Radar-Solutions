@@ -5,11 +5,14 @@ void swap(int *a,int *b);
     *a = *b;
     *b = temp;
 }
-void bubblesort(int arr[], int n);
+void bubbleSort(int arr[], int n);
 {
-    for(int i=0;i<n-1;i++){
-        for(int j=0;j<n-i;j++){
-            if(arr[j]>arr[j+1]){
+    for(int i=0;i<n-1;i++) 
+    {
+        for(int j=0;j<n-i;j++) 
+        {
+            if(arr[j]>arr[j+1])
+            {
                 swap(&arr[j],&arr[j+1]);
             }
         }
@@ -22,14 +25,16 @@ void printArray(int arr[],int n)
     }
     printf("\n");
 }
-int main(){
+int main()
+{
     int n;
     scanf("%d",&n);
     int arr[n];
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++)
+    {
         scanf("%d", &arr[i]);
     }
-    bubblesort(arr ,n);
+    bubbleSort(arr ,n);
     printArray(arr,n);
     return 0;
 }
