@@ -15,7 +15,7 @@ void bubblesort(int arr[], int n);
         }
     }
 }
-void printarray(int arr[],int n)
+void printArray(int arr[],int n)
 {
     for(int i=0;i<n;i++){
         printf("%d",arr[i]);
@@ -30,6 +30,6 @@ int main(){
         scanf("%d", &arr[i]);
     }
     bubblesort(arr ,n);
-    printarray(arr,n);
+    printArray(arr,n);
     return 0;
 }
